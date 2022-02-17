@@ -30,5 +30,5 @@ for combo in toy_combos:
     if cost_of_toy1 + cost_of_toy2 <= max_money:
       options.append(combo)
       
-# print the array try new combos
+# print the array try new combos ****
 print(options) 
