@@ -1,1 +1,1 @@
-Hello Git and Github, testing out a new VS code ext
+Hello! This repo is where I build things with Python3.
