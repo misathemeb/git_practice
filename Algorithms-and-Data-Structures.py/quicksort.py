@@ -4,7 +4,7 @@ from load import load_numbers
 
 numbers = load_numbers(sys.argv[1])
 
-#relies on recursion, then divide and conquer
+#relies on recursion, then divide and conquer O(n log n) best case, worst case= O(n^2)
 def quicksort(values):
     if len(values) <= 1:
         return values

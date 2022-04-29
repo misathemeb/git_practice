@@ -1,4 +1,6 @@
 
+#runtime O(n) aka linear time
+
 def linear_search(list, target):
     '''
     returns the index position of the target if found, else returns None

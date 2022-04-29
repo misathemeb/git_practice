@@ -1,4 +1,6 @@
 
+# O(n log n) runtime 
+
 def merge_sort(list):
     """
     sorts a list in ascending order. returns a new sorted list.

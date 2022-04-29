@@ -1,7 +1,11 @@
 
+
+#need a sorted list to use binary search, could run quicksort on an unsorted array first then use this using a redirect in the CLI
+# runtime O(log n) fast and efficient algo
+
 def binary_search(list, target):
     first = 0
-    last = (len(list -1))
+    last = len(list) -1 
     
     while first <= last:
         midpoint = (first + last) // 2
