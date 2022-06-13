@@ -31,6 +31,7 @@
 ## Project Status
 
 Project is:  _in-progress_ but will make changes if new Python update creates opportunity to refactor more efficiently.
+* adding some common algo problems asked in interviews: bracket balance, reservoir sampling etc.
 
 ## Contact
 

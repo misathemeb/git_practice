@@ -1,7 +1,7 @@
 
 import numbers
 from unittest import result
-
+# O(log N), the iterative version is more efficient O(log N)(1)
 
 def recursive_binary_search(list, target):
     if len(list) == 0:
