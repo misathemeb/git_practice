@@ -54,7 +54,7 @@ class LinkedList:
         return None     
        
     def insert(self, data, index):
-        #inserts a new Node containing data at index position, insertion takes contant time 0(1) but finding the node at the insertion point takes linear 0(n). therefore overall linear time.
+        #inserts a new Node containing data at index position, insertion takes constant time 0(1) but finding the node at the insertion point takes linear 0(n). therefore overall linear time.
         
         if index == 0:
             self.add(data)
