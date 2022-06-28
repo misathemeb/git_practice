@@ -15,13 +15,11 @@ year_dd = driver.find_element(By.ID, 'edition_select')
 gender_dd = driver.find_element(By.ID, 'athlete_gender')
 
 #next collect options for dropdown menu using .find elem by tag method
-year_options = year_dd.find_element(By.TAG_NAME, 'option')
-gender_options = gender_dd.find_element(By.TAG_NAME, 'option')
+year_options = year_dd.find_elements(By.TAG_NAME, 'option')
+gender_options = gender_dd.find_elements(By.TAG_NAME, 'option')
 
-year_element = driver.find_element(By.XPATH, "//select[option/@value ='1']")
-print(year_element)  
 
-print(year_element.get_attribute('text'))  
+print(year_options[29].get_attribute('text'))  
 
         
 usa_list = []
