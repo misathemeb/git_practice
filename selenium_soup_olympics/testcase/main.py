@@ -1,13 +1,13 @@
 import unittest
 from selenium import webdriver
-from selenium.webdriver import Safari
+
 import page
 
 class OlympediaSearch(unittest.TestCase):
     
     def setup(self):
         print('setup')
-        self.driver = webdriver.Safari
+        self.driver = webdriver.Safari()
         self.driver.get('http://www.olympedia.org/')
         
         
@@ -23,3 +23,4 @@ class OlympediaSearch(unittest.TestCase):
         
 if  __name__ == "__main__":
     unittest.main()
+

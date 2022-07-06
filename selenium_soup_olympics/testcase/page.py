@@ -9,7 +9,7 @@ class MainPage(BasePage):
         return "Olympedia" in self.driver.title
     
     def click_go_button(self):
-        element = self.driver.find_element(MainPageLocators.GO_BUTTON)
+        element = self.driver.find_element(*MainPageLocators.GO_BUTTON)
         element.click()
         
 class SearchResultsPage(BasePage):
