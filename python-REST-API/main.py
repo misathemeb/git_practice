@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_restful import Api, Resource, reqparse, abort, fields, marshal_with
-from flask_sqlalchemy import SQLAlchemy, Model
+from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Column, String, Integer
 app = Flask(__name__)
 api = Api(app)
@@ -75,7 +75,7 @@ class Video(Resource):
 
 	def delete(self, video_id):
 		abort_if_video_id_doesnt_exist(video_id)
-		del videos[video_id]
+		del video_put_args[video_id]
 		return '', 204
 
 
