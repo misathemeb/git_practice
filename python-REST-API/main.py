@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Column, String, Integer
 app = Flask(__name__)
 api = Api(app)
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 db = SQLAlchemy(app)
 
