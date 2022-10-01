@@ -1,0 +1,9 @@
+[
+    {
+        "attribute": "date",
+        "code": 15740,
+        "codeSystem": "LOINC",
+        "item": "type",
+        "question": "lab collect time"
+    }
+]
