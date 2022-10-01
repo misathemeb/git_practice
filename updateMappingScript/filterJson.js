@@ -4,46 +4,45 @@ const fs = require('fs');
 
 //store entire study mapped json in new var
 let originalMapping = {
-    "mapping": [
-        {  "attribute": "time",
-           "code": 25220,
-           "codeSystem": "LOINC",
-           "item": "type",
-           "question": "lab collect time"
+"mapping": [
+   { "attribute": "time",
+      "code": 25220,
+      "codeSystem": "LOINC",
+      "item": "type",
+      "question": "lab collect time"
 
-       },
+   },
+   {  "attribute": "time",
+      "code": 25740,
 
-       {  "attribute": "time",
-          "code": 25740,
+      "codeSystem": "LOINC",
+      "item": "type",
+      "question": "lab collect time"
+      
+   },
+   {  "attribute": "time",
+      "code": 22740,
 
-           "codeSystem": "LOINC",
-           "item": "type",
-           "question": "lab collect time"
-           
-       },
-       {  "attribute": "time",
-          "code": 22740,
+      "codeSystem": "LOINC",
+      "item": "type",
+      "question": "lab collect time"
+   },
+   {  "attribute": "date",
+      "code": 15740,
 
-          "codeSystem": "LOINC",
-          "item": "type",
-          "question": "lab collect time"
-       },
-       {  "attribute": "date",
-          "code": 15740,
+      "codeSystem": "LOINC",
+      "item": "type",
+      "question": "lab collect time"
+   },
+   {  "attribute": "time",
+      "code": 25740,
 
-          "codeSystem": "LOINC",
-          "item": "type",
-          "question": "lab collect time"
-       },
-       {  "attribute": "time",
-          "code": 25740,
+      "codeSystem": "LOINC",
+      "item": "type",
+      "question": "lab collect time"
+      }
 
-          "codeSystem": "LOINC",
-          "item": "type",
-          "question": "lab collect time"
-       }
-
-    ]
+   ]
 };
 // map through json objects to filter out items that will continue to be mapped. 
 const newJson = originalMapping.mapping.filter( item => {
