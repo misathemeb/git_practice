@@ -44,14 +44,14 @@ let originalMapping = {
 
    ]
 };
-// map through json objects to filter out items that will continue to be mapped. 
-const newJson = originalMapping.mapping.filter( item => {
-       return !(item.attribute == "time" && item.code)
-});
+// iterate through json objects to filter and remove items that contain key, value attribute: "DATE" and key = code 
+ originalMapping.mapping.forEach(item => {
+     if (item.attribute === "DATE" && item.hasOwnProperty('code')){
+         delete item.attribute;
+         delete item.code;
+        }
+    });
 
 //write to newMap file. copy and paste to body of Postman PUT, then run study mapping GET to confirm undesired items are no longer mapped.
-let data = JSON.stringify(newJson, null, 4);
-fs.writeFileSync('newMap.json', data);
-
-console.log(newJson)
-
+ let data = JSON.stringify(originalMapping, null, 4);
+ fs.writeFileSync('newMap.json', data);
